@@ -1,0 +1,44 @@
+.about-page {
+    background-color: white;
+  }
+
+  .about-page h1 {
+    font-size: 40px;
+    color: rgba(227,30,178,1);
+    text-align: center;
+    font-family: 'chalkduster';
+  }
+  
+  .about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .about-us-text {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: transparent; /* make the grid items transparent */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item h2 {
+    margin-top: 0;
+    color: rgba(227,30,178,1);
+    font-family: 'chalkduster';
+  }
+  
+  .image-container {
+    padding: 10px;
+  }

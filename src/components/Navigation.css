@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* add a background color to distinguish the nav from the rest of the page */
+  }
+  
+  .nav img {
+    width: 50px; /* adjust the logo size */
+    margin-right: 20px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: #666;
+  }
