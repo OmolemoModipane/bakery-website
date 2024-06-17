@@ -26,7 +26,7 @@
   }
   
   .grid-item {
-    background-color: transparent; /* make the grid items transparent */
+    background-color: transparent; 
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;

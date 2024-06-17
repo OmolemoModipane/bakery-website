@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0; /* add a background color to distinguish the nav from the rest of the page */
+    background-color: #f0f0f0; 
   }
   
   .nav img {
-    width: 50px; /* adjust the logo size */
+    width: 50px; 
     margin-right: 20px;
   }
   
@@ -15,7 +15,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-left: auto;
   }
   
   .nav li {
@@ -23,10 +24,10 @@
   }
   
   .nav a {
-    color: #333;
+    color: black;
     text-decoration: none;
   }
   
   .nav a:hover {
-    color: #666;
+    color: rgb(162, 70, 16);
   }

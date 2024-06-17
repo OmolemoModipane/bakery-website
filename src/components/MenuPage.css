@@ -10,7 +10,7 @@
 }
 
 .menu-title {
-  font-family: 'chalkduster';
+  font-family: 'Maker felt';
   font-size: 55px;
   color: black;
   text-align: center;
@@ -59,6 +59,7 @@
 
 .menu-item h2 {
   color: black;
+  font-family: 'chalkduster';
 }
 
 .add-to-cart {
@@ -87,8 +88,8 @@
   background-color: white;
   color: black;
   padding: 20px;
-  width: 80%; /* increased width */
-  margin: 0 auto; /* centered */
+  width: 60%; 
+  margin: 0 auto; 
   position: relative;
 }
 
@@ -137,6 +138,6 @@
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 0;
-  margin-top: 20px; /* added margin top */
+  margin-top: 20px; 
 }
 

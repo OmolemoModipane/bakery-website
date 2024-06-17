@@ -1,4 +1,4 @@
-/* homepage.css */
+
 
 .page {
     height: 100vh;
@@ -45,7 +45,7 @@
   }
   
   .page a:hover {
-    color: #555;
+    color: rgb(162, 70, 16);
   }
   
   .slide-in {
