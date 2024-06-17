@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import croissant from '../images/croissant.jpg';
-import muffin from '../images/muffin.jpg';
-import cake from '../images/cake.jpg';
-import bread from '../images/bread.jpg';
-import pastry from '../images/pastry.jpg';
+import cupcake from '../images/ cupcake.jpg';
+import cakes from '../images/cakes.jpg';
+import Bento from '../images/Bento.jpg';
+import cookies from '../images/cookies.jpg';
+import eclairs from '../images/eclairs.jpg';
 import './MenuPage.css';
 
 const MenuPage = () => {
@@ -12,11 +13,12 @@ const MenuPage = () => {
   const [orderPlaced, setOrderPlaced] = useState(false);
 
   const menuItems = [
-    { id: 1, name: 'Croissant', price: 25.00, image: croissant },
-    { id: 2, name: 'Muffin', price: 17.50, image: muffin },
-    { id: 3, name: 'Cake', price: 40.00, image: cake },
-    { id: 4, name: 'Bread', price: 20.00, image: bread },
-    { id: 5, name: 'Pastry', price: 35.00, image: pastry },
+    { id: 1, name: 'Croissants', price: 20.00, image: croissant },
+    { id: 2, name: 'Cupcakes', price: 250.00, image: cupcake },
+    { id: 3, name: 'Cakes', price: 450.00, image: cakes },
+    { id: 4, name: 'Bento Cakes', price: 300.00, image: Bento },
+    { id: 5, name: 'Cookies', price: 150.00, image: cookies },
+    { id: 6, name: 'Eclairs', price: 45.00, image: eclairs }
   ];
 
   const handleSearch = (e) => {
@@ -28,7 +30,7 @@ const MenuPage = () => {
   };
 
   const handleRemoveFromCart = (item) => {
-    setCart(cart.filter((i) => i.id!== item.id));
+    setCart(cart.filter((i) => i.id !== item.id));
   };
 
   const handleOrder = () => {
@@ -56,21 +58,21 @@ const MenuPage = () => {
         className="search-bar"
       />
       <div className="menu-grid-container">
-        <ul className="menu-grid">
-          {filteredMenuItems.map((item) => (
-            <li key={item.id} className="menu-item">
-              <img src={item.image} alt={item.name} />
-              <h2>{item.name}</h2>
-              <p>Price: R{item.price.toFixed(2)}</p>
-              <button
-                onClick={() => handleAddToCart(item)}
-                className="add-to-cart"
-              >
-                Add to Cart
-              </button>
-            </li>
-          ))}
-        </ul>
+      <ul className="menu-grid">
+  {filteredMenuItems.map((item) => (
+    <li key={item.id} className="menu-item">
+      <img src={item.image} alt={item.name} />
+      <h2>{item.name}</h2>
+      <p>Price: R{item.price.toFixed(2)}</p>
+      <button
+        onClick={() => handleAddToCart(item)}
+        className="add-to-cart"
+      >
+        Add to Cart
+      </button>
+    </li>
+  ))}
+</ul>
       </div>
       <div className="cart-and-order">
         <div className="cart">
@@ -91,15 +93,12 @@ const MenuPage = () => {
             ))}
           </ul>
           <p>Total: R{cart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</p>
+          {cart.length > 0 && (
+            <button onClick={handleOrder} className="place-order">
+              Place Order
+            </button>
+          )}
         </div>
-        {orderPlaced && (
-          <p>Thank you for your order!</p>
-        )}
-        {cart.length > 0 && (
-          <button onClick={handleOrder} className="place-order">
-            Place Order
-          </button>
-        )}
       </div>
     </div>
   );
