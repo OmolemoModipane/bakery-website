@@ -101,7 +101,7 @@ const MenuPage = () => {
           {orderPlaced && (
   <div>
     <h2>Order Placed!</h2>
-    <p>Thank you for your order. We'll process it soon.</p>
+    <p>Thank you for your order, we'll shortly redirect you to our payment gateway. </p>
   </div>
 )}
         </div>
