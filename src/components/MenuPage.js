@@ -30,7 +30,10 @@ const MenuPage = () => {
   };
 
   const handleRemoveFromCart = (item) => {
-    setCart(cart.filter((i) => i.id !== item.id));
+    setCart(cart.filter((i) => i.id!== item.id));
+    if (cart.length === 1) {
+      setOrderPlaced(false);
+    }
   };
 
   const handleOrder = () => {
