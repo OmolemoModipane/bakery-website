@@ -98,6 +98,12 @@ const MenuPage = () => {
               Place Order
             </button>
           )}
+          {orderPlaced && (
+  <div>
+    <h2>Order Placed!</h2>
+    <p>Thank you for your order. We'll process it soon.</p>
+  </div>
+)}
         </div>
       </div>
     </div>
